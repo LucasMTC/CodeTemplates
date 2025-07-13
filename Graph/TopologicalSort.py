@@ -3,7 +3,7 @@ from collections import defaultdict, deque
 def create_graph(connections:list) -> dict:
     graph = defaultdict(list)
     for con in connections:
-        start, end = con[0], con[1]
+        start, end = con
         graph[start].append(end)
         if end not in graph:
             graph[end] = []
