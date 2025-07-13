@@ -1,3 +1,23 @@
+"""
+This is an implementation of Topological Sorting using Kanh's Algorithm (BFS). Topological Sorting 
+is a way of sorting that orders nodes based on their indegree values. In other words, for every 
+connection from a node u -> v, u should always come before v in the sorted result. Topological 
+Sorting questions are common for interviews and they normally take the form of something needing 
+to happen before another thing.
+
+Examples:
+- Course Schedule: Leetcode 207
+- Alien Dictionary: Leetcode 269
+
+Time Complexity: O(V + E) 
+Where V is the amount of vertices in the graph and E is the amount of edges in the graph.
+
+Space Complexity: O(V)
+Because we store every vertice in the graph in the output array.
+
+Always remember that Topological Sorting only works on Directed Acyclical Graphs (DAGs).
+"""
+
 from collections import defaultdict, deque
 
 def create_graph(connections:list) -> dict:
