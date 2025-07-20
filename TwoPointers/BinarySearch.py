@@ -1,4 +1,8 @@
 def binarySearch(arr, num):
+    """
+    Time Complexity: O(log n)
+    Space Complexity: O(1)
+    """
     l = 0
     r = len(arr) - 1
     while r >= l:
